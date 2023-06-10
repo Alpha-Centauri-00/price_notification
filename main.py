@@ -16,7 +16,7 @@ def wie_ist_der_preis():
     my_price = tree.xpath(config.MY_PRICE)[0][2].text
     The_price = my_price.split()[0].replace(",",".")
 
-    if float(The_price) < 56.00:
+    if float(The_price) < 60.00:
         toast = Notification(app_id="Gold Now!",
                             title="The Gold Price",
                             msg=f"The Price now is {The_price} EUR",
